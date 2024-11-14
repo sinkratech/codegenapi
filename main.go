@@ -4,13 +4,16 @@ import (
 	"log"
 	"os"
 
-	"github.com/sinkratech/codegen/actions"
+	"github.com/sinkratech/codegenapi/actions"
 	"github.com/urfave/cli/v2"
 )
 
+var version string
+
 func main() {
 	app := cli.App{
-		Usage: "Generate boilerplate for Sinkra API",
+		Usage:   "Generate boilerplate for Sinkra API",
+		Version: version,
 		Commands: []*cli.Command{
 			{
 				Name:    "feature",

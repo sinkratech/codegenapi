@@ -1,4 +1,4 @@
-module github.com/sinkratech/codegen
+module github.com/sinkratech/codegenapi
 
 go 1.23.0
 
