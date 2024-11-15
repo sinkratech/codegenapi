@@ -3,6 +3,7 @@ module github.com/sinkratech/codegenapi
 go 1.23.0
 
 require (
+	github.com/golang-cz/textcase v1.2.1
 	github.com/stretchr/testify v1.9.0
 	github.com/urfave/cli/v2 v2.27.5
 )

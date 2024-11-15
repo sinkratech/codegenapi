@@ -25,6 +25,9 @@ type GenFeatureData struct {
 
 func GenFeature(ctx *cli.Context) error {
 	packageName := ctx.Args().First()
+	if packageName == "" {
+		return fmt.Errorf("missing argument for package name")
+	}
 
 	rootDir, err := findRootProjectDir()
 	if err != nil {

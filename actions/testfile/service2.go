@@ -1,0 +1,5 @@
+package myfeature
+
+func NoGlobalInterface() {
+
+}

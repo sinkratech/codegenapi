@@ -1,0 +1,9 @@
+// DO NOT EDIT. Edit at your own risk.
+package foosha
+{{ range .Method }}
+func With{{ .InterfaceName }}({{ .VarName }} {{ .InterfaceName }}) func(*Deps) {
+    return func(d *Deps) {
+		d.{{ .VarName }} = {{ .VarName }}
+	}
+}
+{{ end }}

@@ -22,6 +22,13 @@ func main() {
 				Action:  actions.GenFeature,
 				Args:    true,
 			},
+			{
+				Name:    "interface",
+				Aliases: []string{"i", "intr"},
+				Usage:   "Generate options pattern from all file in spesified directory (except deps.go and entrypoint.go) and save it to deps.go",
+				Action:  actions.GenInterfaceImpl,
+				Args:    true,
+			},
 		},
 	}
 
