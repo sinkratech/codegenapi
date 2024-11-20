@@ -29,6 +29,12 @@ func main() {
 				Action:  actions.GenInterfaceImpl,
 				Args:    true,
 			},
+			{
+				Name:    "i18n",
+				Aliases: []string{"in"},
+				Usage:   "Generate internationalization based on i18n.json",
+				Action:  actions.GenI18n,
+			},
 		},
 	}
 
